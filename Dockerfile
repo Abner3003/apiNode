@@ -8,8 +8,10 @@ COPY package*.json ./
 # Instalar as dependências do projeto
 RUN npm install
 
+COPY . .
+
 # Expor a porta que a aplicação vai rodar
-EXPOSE 3000
+EXPOSE 3001
 
 # Comando para rodar a aplicação
 CMD ["node", "server.js"]

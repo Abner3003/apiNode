@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = process.env.APPLICATION_PORT || 3001;
 const db = require('./database');
 const setupSwagger = require('./swagger');
 
