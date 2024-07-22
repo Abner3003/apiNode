@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 -- Criar usuário 'abner' e conceder acesso como root
-CREATE USER 'abner'@'%' IDENTIFIED BY 'senha_desejada';
+CREATE USER 'abner'@'%' IDENTIFIED BY '1234';
 
 GRANT ALL PRIVILEGES ON *.* TO 'abner'@'%' WITH GRANT OPTION;
 
